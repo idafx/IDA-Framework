@@ -1,0 +1,244 @@
+/* 
+    Document   : dataentry
+    Created on : Apr 10, 2009, 2:41:32 PM
+    Author     : towfx
+    Description:
+        Styling related to data.
+*/
+#y1, #y2, #m1, #m2, #dec {width:60px }
+#val, #ver  {width:100% }
+#ent, #geo {width:100%}
+
+
+#content #module-content #module-content-left{width:100%}
+#content #module-content #module-content-right{width:0%}
+#widget_0 .portlet-content {overflow:visible; margin:10px; padding:10px}
+
+
+#dataentry tr th{
+    background-color:#D5D5FF;
+}
+
+#datatable {
+    margin:0px;
+    padding:0px;
+    border-collapse: collapse;
+}
+#datatable td {
+    padding:0;
+    margin: 0;
+
+}
+
+#datatable td.item{padding:0 15px 0 15px}
+
+.data {text-align: right; min-width:80px; padding: 0 15px 0 15px; white-space:nowrap;}
+
+
+.datafield {
+    /*font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 100%;*/
+    width:80px;
+    text-align: right;
+    border:1px;
+    padding:3px 15px 3px 0px;
+    margin:0;
+}
+
+td.dataform{border:1px #C4C4C4 solid; text-align: right; border-top:0px; background-color:#FFFFFF}
+
+
+.type_level_1	 {
+    margin-top: 6px;
+
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 0%;
+    
+    font-size: 130%;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #990000;
+    /*background-color: #FFD5D5;*/
+}
+.category_level_2{
+    margin-top:5px;
+
+    font-weight:bold;
+    white-space: nowrap;
+    
+    margin-left:5%;
+    font-size: 120%;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #000099;
+    /*background-color: #D2E1FF;*/
+}
+.category_level_3{
+    white-space: nowrap;
+    margin-top:4px;
+    margin-left:10%;
+    font-size: 110%;
+    font-weight:bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFCC00;
+    /*background-color: #FFF2C1;*/
+}
+.category_level_4{
+    margin-top:3px;
+    white-space: nowrap;
+    margin-left:15%;
+    font-size: 100%;
+    font-weight:bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+}
+.category_level_5{
+    margin-top:2px;
+    white-space: nowrap;
+    margin-left:20%;
+    font-size: 90%;
+    font-weight:bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+.category_level_6{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:25%;
+    font-size: 90%;
+    font-weight:bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+.category_level_7{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:30%;
+    font-size: 90%;
+    font-weight:bold;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+.category_level_8{
+    margin-top:1px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin-left:35%; font-size: 90%; border-bottom-width: 2px;
+                   border-bottom-style: solid;
+                   border-bottom-color: #FFCC00;}
+.category_level_9{
+    margin-top:1px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin-left:40%; font-size: 90%; border-bottom-width: 2px;
+                   border-bottom-style: solid;
+                   border-bottom-color: #FFCC00;}
+
+
+
+.item	{ font-size: 100%; white-space:nowrap;}
+.mrgn-1 { margin-left: 0%;}
+.mrgn-2 { margin-left: 5%;}
+.mrgn-3 { margin-left: 10%;}
+.mrgn-4 { margin-left: 15%;}
+.mrgn-5 { margin-left: 20%;}
+.mrgn-6 { margin-left: 25%;}
+.mrgn-7 { margin-left: 30%;}
+.mrgn-8 { margin-left: 35%;}
+.mrgn-9 { margin-left: 40%;}
+.mrgn-10 { margin-left: 45%;}
+
+
+.level-1{
+    margin-top:6px;
+    font-weight:bold;
+    font-size: 130%;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #990000;
+    /*background-color: #FFD5D5;*/
+}
+.level-2{
+    margin-top:5px;
+    font-weight:bold;
+    font-size: 120%;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #000099;
+    /*background-color: #D2E1FF;*/
+}
+.level-3{
+    margin-top:4px;
+    font-weight:bold;
+    font-size: 110%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFCC00;
+    /*background-color: #FFF2C1;*/
+}
+.level-4{
+    margin-top:3px;
+    font-weight:bold;
+    font-size: 100%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+}
+.level-5{
+    margin-top:2px;
+    font-weight:bold;
+    font-size: 90%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+.level-6{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 90%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+.level-7{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 90%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+.level-8{
+    margin-top:1px;
+    font-weight:bold;
+          font-size: 90%; border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: #FFCC00;}
+.level-9{
+    margin-top:1px;
+    font-weight:bold;
+          font-size: 90%; border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color: #FFCC00;}
+
+
+.sitc {white-space: nowrap; margin-left:0%;}
+
+
+
+.negative {
+    color: red;
+}
+
+/*#datatable thead th {border:1px #C4C4C4 solid;}
+.head{border:1px #C4C4C4 solid;}*/
+.head.year { font-size: 150%; }
+.head.month { font-size: 130%;}
+.head.value {font-size:100%;  background-color:#cccccc; }
+.head.value-type {font-size:80%; background-color:#ccccff; }

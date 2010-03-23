@@ -1,0 +1,52 @@
+/*
+    Document   : form
+    Created on : Apr 10, 2009, 2:37:57 PM
+    Author     : towfx
+    Description:
+        Format formo form
+*/
+.standardform label {
+	float: left;
+	width: 25%;
+	margin-right: 10px;
+        font-weight: bold;
+}
+
+.standardform label.group {
+	float: none;
+	width: auto;
+	margin: 0 5px 0 2px;
+        font-weight: normal;
+}
+
+.standardform span {
+	display:block;
+        padding-left:28%;
+}
+
+
+.errorMessage { background: url(img/notice-small.png)  no-repeat; padding:0px 0px 0px 30px; color:#ff0000; font-style:italic}
+.standardform p {padding:5px 0px 5px 0px}
+
+option.type_1     {background-color:#FFAAAA; font-size:130%;}
+option.category_2 {background-color:#AAAAFF; font-size:120%;}
+option.category_3 {background-color:#FFFFAA; font-size:110%;}
+option.category_4 {background-color:#E6E6E6; font-size:100%;}
+option.category_5 {background-color:#C8C8C8; font-size:90%;}
+option.category_6 {background-color:#AAAAAA; font-size:80%;}
+
+option.level_1 {background-color:#ffe3e3; font-size:130%;}
+option.level_2 {background-color:#dcdcfb; font-size:120%;}
+option.level_3 {background-color:#fafad1; font-size:110%;}
+option.level_4 {background-color:#e6e6e6; font-size:100%;}
+option.level_5 {background-color:#C8C8C8; font-size:90%;}
+option.level_6 {background-color:#AAAAAA; font-size:80%;}
+
+/*//option[@selected] {background-color:#000000; } /*not working */
+
+/* Globally modify input size */
+.standardform .input[type=text],
+.standardform .input[type=password],
+.standardform textarea
+{width:65%}
+.standardform select {max-width:65%}

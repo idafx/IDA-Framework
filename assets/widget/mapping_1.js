@@ -1,0 +1,1 @@
+//refer: http://code.google.com/apis/ajax/playground/#event_closure

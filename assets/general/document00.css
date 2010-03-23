@@ -1,0 +1,68 @@
+.document .filename{}
+.document .type {}
+.document .keyword {}
+.document .description {}
+.document .title  {font-family: Verdana, Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #333333 !important;
+                        text-decoration: none; }
+
+
+.document .uploader {}
+.document .date {}
+.document .link {}
+
+
+.td_title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	/*color: #333333 !important;*/
+	text-decoration: none;
+	/*background-color: #FFFFFF;*/
+}
+
+.description {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.5em;
+    text-align:justify;
+    
+
+	
+}
+
+.form-search {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	/*color: #222222;*/
+    text-align:right;
+  /*  line-height: 2em;*/
+
+	text-decoration: none;
+	/*background-color: #FFFFFF;*/
+}
+
+.error_handling {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: blink;
+	/*text-decoration: none;*/
+	/*background-color: #FFFFFF;*/
+}
+
+.link05 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #333333;  text-decoration: none;}
+.link05:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #0450af;  text-decoration: underline;}
+.link05:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #0450af;  text-decoration: underline;}
+.link05:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #0450af;  text-decoration: underline;}
+.link05:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #0450af;  text-decoration: none;}
+
+.link02 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; text-decoration: none;}
+.link02:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; text-decoration: underline;}
+.link02:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; text-decoration: underline;}
+.link02:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; text-decoration: underline;}
+.link02:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; text-decoration: none;}

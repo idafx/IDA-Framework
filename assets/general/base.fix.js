@@ -1,0 +1,2 @@
+
+    var baseURL = '/eids2/';

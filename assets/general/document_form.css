@@ -1,0 +1,144 @@
+/* 
+    Document   : form
+    Created on : Apr 10, 2009, 2:37:57 PM
+    Author     : towfx
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+form, input, select{
+	font-size:1em;
+	font-family: "Segoe UI", Arial, sans-serif ; /*"Lucida Sans", "Calibri",  */
+}
+
+
+
+#horizontal{
+
+        style='BORDER-RIGHT: #000000 0px solid;
+        BORDER-TOP: #000000 0px solid;
+        BORDER-LEFT-COLOR: #0000FF;
+        FILTER: alpha(opacity=100);
+        OVERFLOW: auto;
+        WIDTH: 650px;
+        BORDER-BOTTOM: #FFFFFF 0px solid;
+        HEIGHT: 300px;
+        BACKGROUND-COLOR: #CCCCCC;
+}
+
+#table {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+
+#content #column_form_listing
+{
+	width:65%;
+	float:left;
+}
+
+#white {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+
+#blue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #028afa;
+}
+
+#td7a {
+	/*background-color: #E5E5E5;*/
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#content #column_form
+{
+	width:40%;
+	float:right;
+}
+
+
+
+#content #column_form_c
+{
+	width:50%;
+	float:left;
+}
+
+.standardform label {
+	float: left;
+	width: 25%;
+	margin-right: 10px;
+    font-weight: bold;
+}
+
+.standardform label.group {
+	float: none;
+	width: auto;
+	margin: 0 5px 0 2px;
+    font-weight: normal;
+}
+
+.standardform span {
+	display:block;
+    padding-left:28%;
+}
+
+
+#link01 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #333333;  text-decoration: none;}
+#link01:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+#link01:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+#link01:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+#link01:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+
+
+.link06 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #333333;  text-decoration: none;}
+.link06:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+.link06:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+.link06:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #1252A2;  text-decoration: none;}
+.link06:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: #000000;  text-decoration: none;}
+
+#form_messages h5 {padding:0px 0px 7px 0px; border-bottom:#ffa953 1px solid;}
+
+#form_messages { padding:10px; border:1px dotted #ffa953;}
+#form_messages .error { background: url(img/notice.png)  no-repeat;  }
+#form_messages .error p { padding:6px 6px 6px 40px }
+
+#form_messages .notice { background: url(img/notice.png)  no-repeat; }
+#form_messages .success { background: url(img/success.png)  no-repeat; }
+
+.errorMessage { background: url(img/notice-small.png)  no-repeat; padding:0px 0px 0px 30px; color:#ff0000; font-style:italic}
+.standardform p {padding:5px 0px 5px 0px}
+
+option.type_1     {background-color:#FFAAAA; font-size:130%;}
+option.category_2 {background-color:#AAAAFF; font-size:120%;}
+option.category_3 {background-color:#FFFFAA; font-size:110%;}
+option.category_4 {background-color:#E6E6E6; font-size:100%;}
+option.category_5 {background-color:#C8C8C8; font-size:90%;}
+option.category_6 {background-color:#AAAAAA; font-size:80%;}
+option:selected {background-color:#000000; } /*not working */
+
+.button1 { border: 4px outset; padding: 2px; text-decoration: none;}
+/* a { border-style: solid; border-width : 1px 4px 4px 1px; text-decoration : none; padding : 4px; border-color : #69f #00f #00f #69f; }*/
+.button1:link {border-style: solid;border-width : 1px 4px 4px 1px;text-decoration : none;padding : 4px;border-color : #69f #00f #00f #69f;}
+.button1:hover { border-color: #ccc; }

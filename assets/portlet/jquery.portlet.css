@@ -1,0 +1,34 @@
+.portlet { margin: 0 1em 1em 0; width:100% }
+.portlet-header { margin: 1px; padding-bottom: 4px; padding-top: 4px ; padding-left: 0.2em; font-size:110%}
+.portlet-header .ui-icon { float: right; }
+/*default is*/
+.portlet-content {padding: 0.5%; margin: 0.5%; overflow:auto}
+/*but if below... adjust more*/
+.portlet-content p,
+.portlet-content h1,
+.portlet-content h2,
+.portlet-content h3,
+.portlet-content h4,
+.portlet-content h5,
+.updated
+{ padding: 0; margin: 1% 2% 1% 2%}
+
+.updated {
+    font-style: italic;
+}
+
+
+
+/** mess with button need workaround
+.portlet-content a { padding: 2%; margin: 2%;} */
+
+.portlet-content .button { margin: 1% ;  }
+
+.portlet-placeholder {
+	border: 2px dashed #36F;
+	background-color: #F0F0F0;
+        height:88px;
+}
+
+.preload {text-align: center}
+.preload img{margin-top: 10%; margin-bottom: 10%}

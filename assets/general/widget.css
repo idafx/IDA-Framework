@@ -1,0 +1,38 @@
+/* 
+    Document   : widget
+    Created on : Apr 10, 2009, 2:43:40 PM
+    Author     : towfx
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+.rss {
+	padding: 20px;
+}
+
+.rss ul{
+list-style:none
+}
+
+.rss h3 a{
+	font-size: 0.9em;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.rss p{
+	font-size: 0.87em;
+	margin: 0;
+	padding: 0;
+}
+
+.updated {font-size: 0.7em;}
+
+

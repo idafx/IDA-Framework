@@ -1,0 +1,26 @@
+.ui-buttongroup {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin: .5em 0 0 0;
+	padding: .3em 1em .5em .4em;
+}
+
+.ui-buttongroup .ui-button {
+	float: right;
+	margin: .5em .4em .5em 0;
+}
+
+.ui-button a {
+	padding: .4em .4em .4em .4em;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	line-height: 1.5em;
+}
+
+.ui-button span.ui-icon {
+	float: left;
+}
+

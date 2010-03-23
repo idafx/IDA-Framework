@@ -1,0 +1,123 @@
+/* 
+    Document   : content
+    Created on : Apr 10, 2009, 2:40:52 PM
+    Author     : towfx
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* Reset */
+body,img,p,h1,h2,h3,h4,h5,h6,ul,ol {margin:0; padding:0; list-style:none; border:none;}
+/* End Reset */
+
+body{
+	font-size:0.8em;
+	font-family: "Segoe UI", Arial, sans-serif ; /*"Lucida Sans", "Calibri",  */
+	background: #FFF;
+}
+
+
+
+
+
+/* Head section */
+#head {
+    background: #000 url(img/header-bg.png) repeat-x;
+    /*height: 100px;*/
+}
+#head h1 {
+	line-height: 71px; /*initially 100px*/
+	color: #FFF;
+	text-align: center;
+	text-indent: -9999em;
+	background-image: url(img/header.png);
+	background-repeat: no-repeat;
+	background-position: 0px 7px;		/* set margin for smaller file: 0px 7px*/
+}
+/* End Head Section */
+
+#content{  padding:3%;
+    min-height:200px;}
+
+#content {
+	/*font-size: 110%;*/
+	/*display: block;*/
+	/*border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: dotted;*/
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+}
+
+#content h1{
+	padding-top:5px;
+	padding-bottom:5px;
+	color: #800000;
+}
+
+#module_title
+{
+	float:right;
+/*padding-top:30px;*/
+}
+
+#module_title h1
+{
+	font-size:270%;
+	color: #999999;
+}
+
+#wrapper_title
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: dotted;
+}
+
+#column_right_title
+{
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	
+}
+
+#content
+{
+    background: url(img/content_bg.png) repeat-x;
+}
+
+#content #column_tree_listing
+{
+	width:50%;
+	float:left;
+}
+
+#content #column_vertical_menu
+{
+    width:20%;
+	float:left;
+}
+
+
+
+
+#footer {
+	clear: left;
+	float: left;
+	background-color: #EBEBEB;
+	margin-top: 20px;
+    width: 100%;
+}
+
+#footer > p {
+	font-size: 0.88em;
+	margin: 10px;
+}
+
+#bread_crumb .bread_crumb{}
+

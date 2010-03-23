@@ -1,0 +1,10 @@
+/* CSS Document */
+table .time {font-weight:bold;border-bottom:1px solid #333333; width:25px}
+table .user {font-weight:bold;border-bottom:1px solid #333333}
+table .topSection {font-weight:bold;border-bottom:1px solid #333333}
+table .subSection {font-weight:bold;border-bottom:1px solid #333333}
+table .module {font-weight:bold;border-bottom:1px solid #333333}
+table .operation {font-weight:bold;border-bottom:1px solid #333333}
+table .from {font-weight:bold;border-bottom:1px solid #333333}
+table .form {background:#F9E6E9;border-bottom:1px dotted #CCCCCC}
+.ip {font-size:50%}

@@ -1,0 +1,205 @@
+
+
+#mapp #datatable td.item, .mapp #datatable td.item{padding:0 5px 0 5px}
+
+#mapp .data, .mapp .data {text-align: right; padding: 0 5px 0 1px; white-space:nowrap;}
+
+
+#mapp .datafield, .mapp .datafield {
+    /*font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 100%;*/
+    /*width:80px;*/
+    text-align: right;
+    border:1px;
+    padding:3px 5px 3px 0px;
+    margin:0;
+}
+
+
+
+#mapp .type_level_1, .mapp .type_level_1	 {
+    margin-top: 1px;
+
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 0%;
+    
+    font-size: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #990000;
+    /*background-color: #FFD5D5;*/
+}
+#mapp .category_level_2, .mapp .category_level_2 {
+    margin-top:1px;
+
+    font-weight:bold;
+    white-space: nowrap;
+    
+    margin-left:5%;
+    font-size: 90%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000099;
+    /*background-color: #D2E1FF;*/
+}
+#mapp .category_level_3, .mapp .category_level_3{
+    white-space: nowrap;
+    margin-top:1px;
+    margin-left:10%;
+    font-size: 80%;
+    font-weight:bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFCC00;
+    /*background-color: #FFF2C1;*/
+}
+#mapp .category_level_4, .mapp .category_level_4{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:15%;
+    font-size: 70%;
+    font-weight:bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+}
+#mapp .category_level_5, .mapp .category_level_5{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:20%;
+    font-size: 70%;
+    font-weight:bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+#mapp .category_level_6, .mapp .category_level_6{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:25%;
+    font-size: 70%;
+    font-weight:bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+#mapp .category_level_7, .mapp .category_level_7{
+    margin-top:1px;
+    white-space: nowrap;
+    margin-left:30%;
+    font-size: 70%;
+    font-weight:bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+#mapp .category_level_8, .mapp .category_level_8{
+    margin-top:1px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin-left:35%; 
+    font-size: 70%; border-bottom-width: 1px;
+                   border-bottom-style: solid;
+                   border-bottom-color: #FFCC00;}
+#mapp .category_level_9, .mapp .category_level_9{
+    margin-top:1px;
+    font-weight:bold;
+    white-space: nowrap;
+    margin-left:40%; font-size: 70%; border-bottom-width: 1px;
+                   border-bottom-style: solid;
+                   border-bottom-color: #FFCC00;}
+
+
+
+#mapp .item, .mapp .item { font-size: 80%; white-space:nowrap;}
+#mapp .mrgn-1, .mapp .mrgn-1 { margin-left: 0%;}
+#mapp .mrgn-2, .mapp .mrgn-2 { margin-left: 5%;}
+#mapp .mrgn-3, .mapp .mrgn-3 { margin-left: 10%;}
+#mapp .mrgn-4, .mapp .mrgn-4 { margin-left: 15%;}
+#mapp .mrgn-5, .mapp .mrgn-5 { margin-left: 20%;}
+#mapp .mrgn-6, .mapp .mrgn-6 { margin-left: 25%;}
+#mapp .mrgn-7, .mapp .mrgn-7 { margin-left: 30%;}
+#mapp .mrgn-8, .mapp .mrgn-8 { margin-left: 35%;}
+#mapp .mrgn-9, .mapp .mrgn-9 { margin-left: 40%;}
+#mapp .mrgn-10, .mapp .mrgn-10 { margin-left: 45%;}
+
+
+#mapp .level-1, .mapp .level-1{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #990000;
+    /*background-color: #FFD5D5;*/
+}
+#mapp .level-2, .mapp .level-2{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 90%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000099;
+    /*background-color: #D2E1FF;*/
+}
+#mapp .level-3, .mapp .level-3{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 80%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFCC00;
+    /*background-color: #FFF2C1;*/
+}
+#mapp .level-4, .mapp .level-4{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 70%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+}
+#mapp .level-5, .mapp .level-5{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 70%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+#mapp .level-6, .mapp .level-6{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 70%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #666666;
+}
+#mapp .level-7, .mapp .level-7{
+    margin-top:1px;
+    font-weight:bold;
+    font-size: 70%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+#mapp .level-8, .mapp .level-8{
+    margin-top:1px;
+    font-weight:bold;
+          font-size: 70%; border-bottom-width: 1px;
+          border-bottom-style: solid;
+          border-bottom-color: #FFCC00;}
+#mapp .level-9, .mapp .level-9{
+    margin-top:1px;
+    font-weight:bold;
+          font-size: 70%; border-bottom-width: 1px;
+          border-bottom-style: solid;
+          border-bottom-color: #FFCC00;}
+
+/*#datatable thead th {border:1px #C4C4C4 solid;}
+.head{border:1px #C4C4C4 solid;}*/
+#mapp .head.year, .mapp .head.year { font-size: 100%; }
+#mapp .head.month, .mapp .head.month { font-size: 90%;}
+#mapp .head.value, .mapp .head.value {font-size:80%;  background-color:#cccccc; }
+#mapp .head.value-type, .mapp .head.value-type {font-size:60%; background-color:#ccccff; }
