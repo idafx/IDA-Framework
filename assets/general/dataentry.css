@@ -23,6 +23,7 @@
     margin:0px;
     padding:0px;
     border-collapse: collapse;
+    height: 100%
 }
 #datatable td {
     padding:0;
@@ -242,3 +243,8 @@ td.dataform{border:1px #C4C4C4 solid; text-align: right; border-top:0px; backgro
 .head.month { font-size: 130%;}
 .head.value {font-size:100%;  background-color:#cccccc; }
 .head.value-type {font-size:80%; background-color:#ccccff; }
+
+
+
+
+

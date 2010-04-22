@@ -57,7 +57,7 @@ jQuery.fn.extend({
 
                 mapp.jmap('AddMarker', {
                     'pointLatLng': [item.latitude, item.longitude],
-                    'pointHTML': item.name+": double click marker to load",
+                    'pointHTML': item.name+": please click the marker again ...",
                     'pointMinZoom': 1
                 }
                 ,
@@ -70,7 +70,7 @@ jQuery.fn.extend({
 
                         $.get( baseURL+"mapping/content" , vars, function(data) {
 
-                            marker.pointHTML = data
+                            marker.pointHTML = '<div class="ui-widget-content ui-corner-all" style="padding:1px">'+data+"</div>"
 
 
                         }, "html")

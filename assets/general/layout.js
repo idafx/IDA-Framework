@@ -11,9 +11,9 @@ $(document).ready(function(){
     //    $(".menu.primary").removeClass("ui-widget-content");
 
     $("#menu_primary")
-    .addClass("ui-tabs ui-widget ui-corner-all")
+    .addClass("ui-tabs ui-widget ui-corner-all")//.end()
     .find("ul")
-    .addClass("ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all")
+    .addClass("ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all")//.end()
     .find("li")
     .addClass("ui-state-default ui-corner-all")
     .css("padding-bottom", 0) // this line is the selected tab hack
@@ -23,12 +23,20 @@ $(document).ready(function(){
         },
         function(){
             $(this).removeClass("ui-state-hover");
-        })
+        });
+    //.width("100%")
 
+    var mnu = $(".ui-tabs .ui-tabs-nav");
+    mnu.css('padding', '0.2em 0.2em 0.3em');//.width("109%")
 
+//alert($.browser.version)
+    
+    if ($.browser.safari || $.browser.webkit) {
+        //alert("this is webkit!")
+        mnu.width("109%");
+    }
 
-
-
+    //$("body").css({background:'url("images/ui-bg_gloss-wave_55_5c9ccc_500x100.png") repeat-x scroll 50% 50% #5C9CCC'})
 
 
     /* SECONDARY MENU TOGGLE */
@@ -45,9 +53,9 @@ $(document).ready(function(){
         .addClass("ui-icon-circle-triangle-s");
 
         $.cookie('hide_menu', true, {
-            path:'/'
-        })
-    }
+            path: baseURL
+        });
+    };
 
     $.show_menu = function ()
     {
@@ -60,10 +68,10 @@ $(document).ready(function(){
         .addClass("ui-icon-circle-triangle-n");
 
         $.cookie('hide_menu', false, {
-            path:'/',
-            expires:360
-        })
-    }
+            path: baseURL,
+            expires: 360
+        });
+    };
 
     $("#toggle_menu")
     .append("Hide Menu")
@@ -81,19 +89,33 @@ $(document).ready(function(){
     .addClass("ui-icon")
     .addClass("ui-icon-circle-triangle-n"); 
 
-    if ($.cookie('hide_menu')=="true") {
-        $.hide_menu()
+    // auto toggle menu on cookies
+    $.hideMe = false; // default: not hide
+
+    if($.cookie('hide_menu')==='true')
+    {
+        $.hideMe = true; //iff cookie says yes
+    }
+
+    if (hideMenu==='yes') { 
+        $.hideMe = true; //iff explicitly asked by url
+    }
+
+    // alert('COOKIE:'+$.cookie('hide_menu')+ 'HIDE:'+$.hideMe)
+
+    if ( $.hideMe ) {
+        $.hide_menu();
         $("#toggle_menu").toggle( function () {
-            $.show_menu()
+            $.show_menu();
         }, function () {
-            $.hide_menu()
+            $.hide_menu();
         } );
     }
     else {
         $("#toggle_menu").toggle( function () {
-            $.hide_menu()
+            $.hide_menu();
         }, function () {
-            $.show_menu()
+            $.show_menu();
         } );
     }    
 
@@ -108,7 +130,7 @@ $(document).ready(function(){
     $(".ui-auto-button").each(function() {
         $(this).button({
             button: $(this).attr("rel")
-        })
+        });
     });
 
 
@@ -162,9 +184,9 @@ $(document).ready(function(){
     $("#print-friendly").toggle(
         function () {
             $("#secondary_menu").hide("fast");
-            $("#module-content").width("100%");
+            $("#module-content").width("100%").css('float: none !important');
 
-            $("#head").hide("fast")
+            $("#head").hide("fast");
 
             var width = $("#datatable").width() + 50;
             $(document).width(width);
@@ -178,7 +200,7 @@ $(document).ready(function(){
             $("#secondary_menu").show("fast");
             $("#module-content").width("78%");
 
-            $("#head").show("fast")
+            $("#head").show("fast");
 
             $(this).text("Print Preview");
         }
@@ -192,9 +214,11 @@ $(document).ready(function(){
         //})
         //})
 
-        $('body').prepend('<div id="ie-alert" class="ui-state-highlight ui-widget" style="font-size:130%; padding:10px; display:none">You are recommended to use "W3C Compliant" web browser. e.g. <a href="http://getfirefox.com">Mozilla Firefox</a></div>')
+        $('body').prepend('<div id="ie-alert" class="ui-state-highlight ui-widget" style="font-size:130%; padding:10px; display:none">You are recommended to use "W3C Compliant" web browser. e.g. <a href="http://getfirefox.com">Mozilla Firefox</a></div>');
     //  $('#ie-alert').show('slow')
     }
+
+    $('#switcher').themeswitcher();
 
 /* end ready */
 });

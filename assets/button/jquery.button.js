@@ -6,11 +6,11 @@
             icon_position: 'left',
             button: "ui-icon-circle-plus"
         };
-        var options = $.extend(defaults, options);
+        options = $.extend(defaults, options);
 
         return this.each(function() {
 
-            button_dom = $(this);
+            var button_dom = $(this);
 
             button_dom
             .addClass("fg-button")
@@ -35,7 +35,7 @@
             {
                 if (options.icon_position)
                 {
-                    button_dom.addClass("fg-button-icon-"+ options.icon_position)
+                    button_dom.addClass("fg-button-icon-"+ options.icon_position);
                 }
 
                 button_dom.prepend(document.createElement("span"))

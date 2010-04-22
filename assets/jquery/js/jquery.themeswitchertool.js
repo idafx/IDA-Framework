@@ -4,7 +4,7 @@ $.fn.themeswitcher = function(settings){
 	var options = jQuery.extend({
 		loadTheme: null,
 		initialText: 'Switch Theme',
-		width: 150,
+		width: 160,
 		height: 200,
 		buttonPreText: 'Theme: ',
 		closeOnSelect: true,
@@ -45,7 +45,7 @@ $.fn.themeswitcher = function(settings){
 		updateCSS( $(this).attr('href') );
 		var themeName = $(this).find('span').text();
 		button.find('.jquery-ui-themeswitcher-title').text( options.buttonPreText + themeName );
-		$.cookie(options.cookieName, themeName, {path:'/', expires:360});
+		$.cookie(options.cookieName, themeName, {path:baseURL, expires:360});
 		options.onSelect();
 		if(options.closeOnSelect && switcherpane.is(':visible')){ switcherpane.spHide(); }
 		return false;
@@ -65,14 +65,14 @@ $.fn.themeswitcher = function(settings){
 	/* Inline CSS
 	---------------------------------------------------------------------*/
 	var button_default = {
-		fontFamily: 'Trebuchet MS, Verdana, sans-serif',
-		fontSize: '11px',
-		color: '#666',
-		background: '#eee url(http://jqueryui.com/themeroller/themeswitchertool/images/buttonbg.png) 50% 50% repeat-x',
+		//'font-family': $.fontFamily,//'Trebuchet MS, Verdana, sans-serif',
+		//fontSize: '11px',
+		//color: '#666',
+		background: '#eee url('+ baseURL + 'assets/themeroller/images/buttonbg.png) 50% 50% repeat-x',
 		border: '1px solid #ccc',
 		'-moz-border-radius': '6px',
 		'-webkit-border-radius': '6px',
-		textDecoration: 'none',
+		//textDecoration: 'none',
 		padding: '3px 3px 3px 8px',
 		width: options.width - 11,//minus must match left and right padding
 		display: 'block',
@@ -80,14 +80,14 @@ $.fn.themeswitcher = function(settings){
 		outline: '0'
 	};
 	var button_hover = {
-		'borderColor':'#bbb',
-		'background': '#f0f0f0',
-		cursor: 'pointer',
-		color: '#444'
+		//'borderColor':'#bbb',
+		//'background': '#f0f0f0',
+		cursor: 'pointer'//,
+		//color: '#444'
 	};
 	var button_active = {
-		color: '#aaa',
-		background: '#000',
+		//color: '#aaa',
+		//background: '#000',
 		border: '1px solid #ccc',
 		borderBottom: 0,
 		'-moz-border-radius-bottomleft': 0,
@@ -100,29 +100,30 @@ $.fn.themeswitcher = function(settings){
 
 
 	//button css
-	button.css(button_default)
+	button.css(button_default).addClass('ui-state-default')
 	.hover(
 		function(){
-			$(this).css(button_hover);
+			$(this).removeClass('ui-state-default').addClass('ui-state-hover') //css(button_hover);
 		},
 		function(){
-		 if( !switcherpane.is(':animated') && switcherpane.is(':hidden') ){	$(this).css(button_default);  }
+		 if( !switcherpane.is(':animated') && switcherpane.is(':hidden') ){	$(this).css(button_default).removeClass('ui-state-hover').addClass('ui-state-default');  }
 		}
 	)
 	.find('.jquery-ui-themeswitcher-icon').css({
 		float: 'right',
 		width: '16px',
 		height: '16px',
-		background: 'url(http://jqueryui.com/themeroller/themeswitchertool/images/icon_color_arrow.gif) 50% 50% no-repeat'
+		background: 'url('+ baseURL + 'assets/themeroller/images/icon_color_arrow.gif) 50% 50% no-repeat'
 	});
 	//pane css
+
 	switcherpane.css({
 		position: 'absolute',
 		float: 'left',
-		fontFamily: 'Trebuchet MS, Verdana, sans-serif',
-		fontSize: '12px',
-		background: '#000',
-		color: '#fff',
+		//'font-family': fontFam,//'Trebuchet MS, Verdana, sans-serif',
+		//fontSize: '12px',
+		//background: '#000',
+		//color: '#fff',
 		padding: '8px 3px 3px',
 		border: '1px solid #ccc',
 		'-moz-border-radius-bottomleft': '6px',
@@ -132,7 +133,7 @@ $.fn.themeswitcher = function(settings){
 		borderTop: 0,
 		zIndex: 999999,
 		width: options.width-6//minus must match left and right padding
-	})
+	}).addClass('ui-widget ui-widget-content')
 	.find('ul').css({
 		listStyle: 'none',
 		margin: '0',
@@ -140,20 +141,21 @@ $.fn.themeswitcher = function(settings){
 		overflow: 'auto',
 		height: options.height
 	}).end()
-	.find('li').hover(
+	.find('li').addClass('ui-state-default')
+            .hover(
 		function(){
 			$(this).css({
-				'borderColor':'#555',
-				'background': 'url(http://jqueryui.com/themeroller/themeswitchertool/images/menuhoverbg.png) 50% 50% repeat-x',
+				//'borderColor':'#555',
+				//'background': 'url('+ baseURL + 'assets/themeroller/images/menuhoverbg.png) 50% 50% repeat-x',
 				cursor: 'pointer'
-			});
+			}).addClass('ui-state-hover').removeClass('ui-state-default');
 		},
 		function(){
 			$(this).css({
-				'borderColor':'#111',
-				'background': '#000',
+				//'borderColor':'#111',
+				//'background': '#000',
 				cursor: 'auto'
-			});
+			}).addClass('ui-state-default').removeClass('ui-state-hover');
 		}
 	).css({
 		width: options.width-30,
@@ -166,7 +168,7 @@ $.fn.themeswitcher = function(settings){
 		float: 'left'
 	}).end()
 	.find('a').css({
-		color: '#aaa',
+		//color: '#aaa',
 		textDecoration: 'none',
 		float: 'left',
 		width: '100%',
